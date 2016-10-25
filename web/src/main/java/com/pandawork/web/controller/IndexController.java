@@ -1,6 +1,5 @@
 package com.pandawork.web.controller;
 
-import com.pandawork.common.entity.User;
 import com.pandawork.core.common.exception.SSException;
 import com.pandawork.core.common.log.LogClerk;
 import com.pandawork.web.spring.AbstractController;

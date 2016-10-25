@@ -1,6 +1,5 @@
 package com.pandawork.service;
 
-import com.pandawork.common.entity.User;
 import com.pandawork.core.common.exception.SSException;
 import org.apache.ibatis.annotations.Param;
 
