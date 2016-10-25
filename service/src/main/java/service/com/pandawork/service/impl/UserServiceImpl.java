@@ -8,11 +8,8 @@ import com.pandawork.core.common.util.Assert;
 import com.pandawork.core.common.util.CommonUtil;
 import com.pandawork.mapper.UserMapper;
 import com.pandawork.service.UserService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * UserServiceImpl

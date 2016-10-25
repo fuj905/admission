@@ -1,9 +1,6 @@
 package com.pandawork.mapper;
 
 import com.pandawork.common.entity.User;
-import org.apache.ibatis.annotations.Param;
-
-import java.util.List;
 
 /**
  * UserMapper
