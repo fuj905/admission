@@ -9,11 +9,11 @@
 </head>
 <body>
     <div style="width: 25%; margin-left: auto; margin-right: auto;">
-        <p style="margin: 0;">请登录</p>
-        <form action="${website}login" method="post">
+        <p style="margin: 0">注册</p>
+        <form action="${website}add" method="post">
             用户名: <input type="text" name="userName" /> <br />
-            密码： <input type="password" name="password" /> <br />
-            <input type="submit" value="登录" />
+            密  码： <input type="password" name="password" /> <br />
+            <input type="submit" value="注册" />
             <input type="reset" value="重置" />
         </form>
     </div>

@@ -113,8 +113,5 @@
     </error-page>-->
     <!-- 配置错误处理 end-->
 
-    <!-- 去掉web容器的默认启动页面。走spring的默认欢迎页面. -->
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
+
 </web-app>

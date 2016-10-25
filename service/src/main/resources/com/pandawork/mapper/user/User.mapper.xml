@@ -5,30 +5,23 @@
 <mapper namespace="com.pandawork.mapper.UserMapper">
 
     <insert id="newUser">
-        INSERT INTO `t_user` (`user_name`, `password`) VALUES(#{user.userName}, #{user.password})
+        INSERT INTO `t_user`(`user_name`, `password`, `is_admin`)
+        VALUES(#{user.userName}, #{user.password}, 0)
     </insert>
 
-    <update id="update">
-        UPDATE `t_user`
-        SET `user_name` = #{user.userName},
-            `password` = #{user.password}
-        where `id` = #{user.id}
-    </update>
+    <!--<update id="update">-->
+        <!--UPDATE `t_user`-->
+        <!--SET `user_name` = #{user.userName},-->
+            <!--`password` = #{user.password}-->
+        <!--where `id` = #{user.id}-->
+    <!--</update>-->
 
-    <delete id="deleteById">
-        DELETE FROM `t_user` WHERE `id` = #{id}
-    </delete>
-
-    <select id="listAll" resultMap="pw.User">
-        SELECT * FROM `t_user`
-    </select>
-
-    <select id="queryById" resultMap="pw.User">
-        SELECT * FROM `t_user` WHERE `id` = #{id}
-    </select>
-
-    <select id="countByUserNameAndPassword" resultType="int">
-        SELECT count(1) FROM `t_user`
-        WHERE `user_name` = #{userName} AND `password` = #{password}
-    </select>
+    <!--<delete id="deleteById">-->
+        <!--DELETE FROM `t_user` WHERE `id` = #{id}-->
+    <!--</delete>-->
+    <!---->
+    <!--<select id="countByUserNameAndPassword" resultType="int">-->
+        <!--SELECT count(1) FROM `t_user`-->
+        <!--WHERE `user_name` = #{userName} AND `password` = #{password}-->
+    <!--</select>-->
 </mapper>
